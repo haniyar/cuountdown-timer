@@ -1,0 +1,127 @@
+body{
+    font-family: 'Red Hat Text', sans-serif;
+    background-image: url("images/pattern-hills.svg"),url("images/bg-stars.svg"), linear-gradient(180deg, rgba(30,31,41,1) 0%, rgba(33,26,41,1) 18%, rgba(47,36,57,1) 100%);
+    background-size: 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    padding: 120px 0 220px 0;
+}
+.title{
+    text-align: center;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: lighter;
+}
+.time-col{
+    background-color: rgb(52, 54, 80);
+    background: linear-gradient(180deg,rgba(52,54,80,0.8683122) 50%,rgba(52,54,80,1)  50%);
+    text-align: center;
+    display: inline-block;
+    width: 250px;
+    border-radius: 7px;
+    font-size: 38px;
+    margin: 15px;
+    box-shadow: 0 20px rgb(30, 31, 41);
+    position: relative;
+    padding: 0;
+    color: hsl(345, 95%, 68%);
+}
+.line{
+    position: absolute;
+    top: 50%;
+    background: rgba(30, 31, 41, 0.19);
+    height: 2px;
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+.time-col:before{
+    content: ' ';
+    display: inline-block;
+    height: 10px;
+    width: 20px;
+    border-radius: 10rem 10rem 0 0;
+    background-color: rgb(30, 31, 41);
+    position: absolute;
+    top: 50%;
+    left: -5px;
+    transform: rotate(90deg);
+    margin: 0;
+}
+.time-col:after{
+    content: ' ';
+    display: inline-block;
+    height: 10px;
+    width: 20px;
+    border-radius: 10rem 10rem 0 0;
+    background-color: rgb(30, 31, 41);
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    transform: rotate(270deg);
+    margin: 0;
+}
+.timer{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    display: block;
+}
+.ttl{
+    display: inline-block;
+    color: hsl(237, 18%, 59%);
+    text-align: center;
+    width: 250px;
+    font-size: 14px;
+    margin: 15px;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    margin: 46px auto;
+}
+.icon{
+    display: inline-block;
+    margin: 10px;
+}
+.icon:hover{
+    color: hsl(345, 95%, 68%);
+}
+@media (max-width: 767px){
+    .timer{
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        display: block;
+        width: 100%;
+    }
+    .time-col{
+        background-color: rgb(52, 54, 80);
+        background: linear-gradient(180deg,rgba(52,54,80,0.8683122) 50%,rgba(52,54,80,1)  50%);
+        text-align: center;
+        display: inline-block;
+        width: 22%;
+        border-radius: 7px;
+        font-size: 23px;
+        margin: 5px;
+        box-shadow: 0 10px rgb(30, 31, 41);
+    }
+    .ttl{
+        width: 17%;
+    }
+    .time-col:before{
+        height: 7px;
+        width: 14px;
+    }
+    .time-col:after{
+        height: 7px;
+        width: 14px;
+    }
+    body{
+        padding: 120px 0 150px 0;
+    }
+}
